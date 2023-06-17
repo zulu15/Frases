@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FraseDetailActivity"
+    android:padding="10dp">
+
+   <EditText
+       android:id="@+id/editTextDetail"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_textColor="@android:color/white"
+        fab:menu_colorNormal="@color/teal_200"
+        fab:menu_colorPressed="@color/teal_700"
+        fab:menu_labels_cornerRadius="3dp"
+        fab:menu_labels_colorRipple="@android:color/white"
+        fab:menu_icon="@drawable/ic_add"
+        android:layout_gravity="bottom|end"
+        fab:menu_animationDelayPerItem="50">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_guardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/done"
+            fab:fab_colorNormal="@color/teal_200"
+            fab:fab_colorPressed="@color/teal_700"
+            fab:fab_label="Guardar"
+            fab:fab_size="mini"
+            fab:fab_colorRipple="@android:color/black" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_menu_eliminar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/eliminar"
+            fab:fab_colorNormal="@color/teal_200"
+            fab:fab_colorPressed="@color/teal_700"
+            fab:fab_label="Eliminar"
+            fab:fab_size="mini"
+            fab:fab_colorRipple="@android:color/black" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,32 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditTextPreference
+        app:key="pref_alarm_hora"
+        app:title="Hora de ejecución"
+        app:summary="Defina la hora de ejecución de la alarma"
+        app:dialogTitle="Ingresa un número"
+        app:defaultValue="0" />
+
+
+    <EditTextPreference
+        app:key="pref_alarm_minuto"
+        app:title="Minuto de ejecución"
+        app:summary="Defina los minutos de ejecución de la alarma"
+        app:dialogTitle="Ingresa un número"
+        app:defaultValue="0" />
+
+    <EditTextPreference
+        app:key="pref_alarm_segundo"
+        app:title="Segundos de ejecución"
+        app:summary="Defina los segundos de ejecución de la alarma"
+        app:dialogTitle="Ingresa un número"
+        app:defaultValue="0" />
+
+
+
+    <SwitchPreferenceCompat
+            app:key="pref_alarm_enable"
+            app:title="@string/enable_alarm_title" />
+
+
+</PreferenceScreen>
